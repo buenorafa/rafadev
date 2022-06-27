@@ -1,0 +1,118 @@
+:root {
+	--main-color: green;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	width: 90vw;
+}
+h1, h2, h3 {
+	font-weight: lighter;
+}
+/* SCROLL-BAR */
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--main-color);
+}
+/* ANCHORS STYLES */
+.link {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	transition: border-bottom .05s;
+}
+.link:hover {
+	border-bottom: 2px solid var(--main-color);
+}
+.email {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	border-bottom: 2px solid var(--main-color);
+	transition: background-color .8s;
+}
+.email:hover {
+	background-color: var(--main-color);
+	color: white;
+}
+
+/* #SECTIONS */
+#welcome-section {
+	height: 100vh;
+	display: flex;
+	font-size: 1.5rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.section {
+	margin: 10% 5%;
+	cursor: default;
+}
+.title {
+	color: var(--main-color);
+}
+.content {	
+	padding: 5% 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#skills {
+	width: 80%;
+	margin: 5% 0%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* MUDAR PARA GRID */
+.icons-list {
+	list-style: none;
+	width: inherit;
+	padding: 0;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.icons-list.big {
+	font-size: 3rem;
+}
+.icons-list li {
+	margin: 5%;
+	transition: color .5s;
+}
+.icons-list li:hover {
+	color: var(--main-color);
+}
+/* PROJECTS */
+
+
+
+/* FOOTER */
+#footer {
+	width: 80%;
+	margin: 0%  5%;
+	padding: 1.5% 5%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.footer-span {
+	color: black;
+}
+.nav-list {
+	list-style: none;
+	display: flex;
+}
+.nav-list li {
+	margin-left: 50px;
+	font-size: 1.5rem;
+}
