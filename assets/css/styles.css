@@ -39,9 +39,8 @@ h1, h2, h3 {
 	background-color: var(--main-color);
 	color: white;
 }
-
 /* #SECTIONS */
-#welcome-section {
+#home {
 	height: 100vh;
 	display: flex;
 	font-size: 1.5rem;
@@ -91,9 +90,6 @@ h1, h2, h3 {
 .icons-list li:hover {
 	color: var(--main-color);
 }
-/* PROJECTS */
-
-
 
 /* FOOTER */
 #footer {
@@ -115,4 +111,38 @@ h1, h2, h3 {
 .nav-list li {
 	margin-left: 50px;
 	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 550px){
+	body {
+		font-size: .8rem;
+	}
+	#home {
+		font-size: 100%;
+	}
+	#skills {
+		padding: 2.5% 2.5%;
+	}
+	.icons-list {
+		margin: 1% 0%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.icons-list.big {
+		font-size: 4rem;
+	}
+	#footer {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.footer-span {
+		margin: 20px 0;
+	}
+	#navbar {
+		display: flex;
+	}
+	.nav-list li {
+		margin: 0px 30px;
+	}	
 }
