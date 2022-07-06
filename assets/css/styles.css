@@ -42,8 +42,8 @@ h1, h2, h3 {
 /* #SECTIONS */
 #home {
 	height: 100vh;
-	display: flex;
 	font-size: 1.5rem;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -92,7 +92,7 @@ h1, h2, h3 {
 }
 
 /* FOOTER */
-#footer {
+.footer {
 	width: 80%;
 	margin: 0%  5%;
 	padding: 1.5% 5%;
@@ -132,7 +132,7 @@ h1, h2, h3 {
 	.icons-list.big {
 		font-size: 4rem;
 	}
-	#footer {
+	.footer {
 		display: flex;
 		flex-direction: column-reverse;
 	}
