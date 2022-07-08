@@ -7,6 +7,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: lighter;
 	width: 90vw;
+	
+	background-color: white;
+	color: black;
 }
 h1, h2, h3 {
 	font-weight: lighter;
@@ -22,7 +25,7 @@ h1, h2, h3 {
 .link {
 	text-decoration: none;
 	font-weight: bold;
-	color: black;
+	color: inherit; 
 	transition: border-bottom .05s;
 }
 .link:hover {
@@ -31,7 +34,7 @@ h1, h2, h3 {
 .email {
 	text-decoration: none;
 	font-weight: bold;
-	color: black;
+	color: inherit;
 	border-bottom: 2px solid var(--main-color);
 	transition: background-color .8s;
 }
@@ -62,33 +65,39 @@ h1, h2, h3 {
 	justify-content: center;
 	align-items: center;
 }
-#skills {
-	width: 80%;
+/* SKILLS */
+ #skills {
+	width: 100%;
 	margin: 5% 0%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-/* MUDAR PARA GRID */
-.icons-list {
-	list-style: none;
-	width: inherit;
-	padding: 0;
-
+	text-align: center;
+} 
+.skills-cards {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5% 5%;
+	width: 80%;
 }
-.icons-list.big {
-	font-size: 3rem;
+.card i {
+	font-size: 90px;
 }
-.icons-list li {
-	margin: 5%;
-	transition: color .5s;
+/* ADD TRANSITION */
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 100px;
+	margin: 2.5% 2.5%;
+	padding: 15px 10px;
+	
 }
-.icons-list li:hover {
+.card:hover {
 	color: var(--main-color);
+	
 }
 
 /* FOOTER */
@@ -102,7 +111,7 @@ h1, h2, h3 {
 	align-items: center;
 }
 .footer-span {
-	color: black;
+	 color: inherit;
 }
 .nav-list {
 	list-style: none;
@@ -119,18 +128,6 @@ h1, h2, h3 {
 	}
 	#home {
 		font-size: 100%;
-	}
-	#skills {
-		padding: 2.5% 2.5%;
-	}
-	.icons-list {
-		margin: 1% 0%;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.icons-list.big {
-		font-size: 4rem;
 	}
 	.footer {
 		display: flex;
