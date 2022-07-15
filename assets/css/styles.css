@@ -1,8 +1,12 @@
-html{
+.light-mode {
 	--main-color: green;
 	--background-color: white;
-	--text-color: black;
-
+	--text-color:black;
+}
+.dark-mode {
+	--main-color: rgb(60, 163, 95);
+	--background-color: rgb(28, 28, 28);
+	--text-color: rgb(255, 255, 255);
 }
 body {
 	padding: 0;
@@ -53,6 +57,17 @@ h1 {
 	justify-content: center;
 	align-items: center;
 }
+/* DARKMODE BTN */
+#dark-btn {
+	font-size: 1.5rem;
+	color: var(--text-color);
+	background-color: inherit;
+	border: none;
+	position: absolute;
+	margin: 10% 5%;
+	cursor: pointer;
+}
+/* DARKMODE BTN */
 .section {
 	margin: 10% 5%;
 	cursor: default;
