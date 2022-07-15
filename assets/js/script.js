@@ -5,11 +5,11 @@ const buttonIcon = document.querySelector("#db-icon");
 function changeTheme(){
     if(html.className == "light-mode"){
         html.setAttribute("class", "dark-mode");
-        buttonIcon.setAttribute("class", "fa-brands fa-jedi-order");
-    
+        buttonIcon.setAttribute("class", "fa-brands fa-galactic-republic");
+        
     } else {
         html.setAttribute("class", "light-mode");
-        buttonIcon.setAttribute("class", "fa-brands fa-galactic-republic");
+        buttonIcon.setAttribute("class", "fa-brands fa-jedi-order");
     }
 }
 darkButton.addEventListener("click", changeTheme, false);
