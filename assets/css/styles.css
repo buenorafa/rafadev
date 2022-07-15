@@ -1,20 +1,22 @@
-:root {
+html{
 	--main-color: green;
+	--background-color: white;
+	--text-color: black;
+
 }
 body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
-	font-weight: lighter;
+	font-weight: 100; 
 	width: 90vw;
 	
-	background-color: white;
-	color: black;
+	background-color: var(--background-color);
+	color: var(--text-color);
 }
-h1, h2, h3 {
-	font-weight: lighter;
+h1 {
+	font-weight: 100;
 }
-/* SCROLL-BAR */
 ::-webkit-scrollbar {
 	width: 8px;
 }
@@ -24,7 +26,7 @@ h1, h2, h3 {
 /* ANCHORS STYLES */
 .link {
 	text-decoration: none;
-	font-weight: bold;
+	/* font-weight: bold; */
 	color: inherit; 
 	transition: border-bottom .05s;
 }
@@ -33,14 +35,14 @@ h1, h2, h3 {
 }
 .email {
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 400;
 	color: inherit;
 	border-bottom: 2px solid var(--main-color);
 	transition: background-color .8s;
 }
 .email:hover {
 	background-color: var(--main-color);
-	color: white;
+	color: var(--background-color);
 }
 /* #SECTIONS */
 #home {
@@ -57,6 +59,8 @@ h1, h2, h3 {
 }
 .title {
 	color: var(--main-color);
+	font-weight: 400;
+
 }
 .content {	
 	padding: 5% 5%;
@@ -86,6 +90,7 @@ h1, h2, h3 {
 .card i {
 	font-size: 90px;
 }
+
 /* ADD TRANSITION */
 .card {
 	display: flex;
