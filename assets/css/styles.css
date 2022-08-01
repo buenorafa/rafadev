@@ -106,6 +106,10 @@ h1 {
 .card i {
 	font-size: 90px;
 }
+/* PROJECTS */
+#projects a {
+	margin-bottom: 1.5rem;
+}
 
 /* ADD TRANSITION */
 .card {
